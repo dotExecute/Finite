@@ -3,9 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Finite</title>
+    <script src = "script.js" defer></script>
 </head>
 <body>
+    <header>
+        <button class="theme-toggle">🌙</button>
+    </header>
+    <dialog class = "modal" id = "welcome-txt">
+        <div class = "info-text">
+            <h3>Why I Built This</h3>
+            <div>
+                In October 2023, I found myself in the ICU with kidney failure 
+                and my heart functioning at only 40% capacity. What followed were 
+                months of dialysis, struggling to breathe, and watching my body 
+                weight drop from 87kg to 63kg.<br>
+                
+                During those long hours in hospital beds and dialysis chairs, 
+                I had plenty of time to think about mortality. Not in an abstract 
+                way, but in the very real sense of "this could be it."<br>
+
+                This app exists to remind me (and maybe you) that our time here is 
+                <b><em>finite</em></b>. Not to scare or depress, but to inspire (hopefully).
+                To live fully in each day we're given. To stop putting off what matters. 
+                To remember that every breath is borrowed time.<br>
+
+                Enter your birthdate below, and let's count what we have left together.
+            </div>
+            <form>
+                <input type = "date" id = "birthdate">
+                <button type = "submit">Submit</button>
+            </form>
+        </div>
+    </dialog>
     <div class = "main">
         <div class = "options">
             <button type = "button">Years</button>
